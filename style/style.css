@@ -1,0 +1,161 @@
+@charset "utf-8";
+@import url('http://fonts.cdnfonts.com/css/lcd');
+	body#corpo{
+		user-select: none;
+	}
+		div#opcoes{
+		position:fixed; /* posi��o */
+		top:0%; /* alinhamento vertical */
+		left: 0%; /* alinhamento horizontal */
+		width:18%; /*largura */
+		height:100%; /* altura */
+		background-color: rgba(128,128,128,0.7); /* cor de fundo, onde a �ltima casa (0.7) � a opcacidade */
+		font-family:Courier New; /* fonte da letra */
+		font-size: 50%;
+		color: #ffffff;
+		border-right: solid 3px #696969; /* tipo de borda */
+		line-height: 20px; /* espa�amento entre as linhas */
+		}
+		div#backColor{
+		position: relative;
+		top: 5%;
+		background: url('http://myauto.com.br/wp-content/uploads/2016/10/Cinza-Escuro.jpg');
+		}
+		div#inverteColor{
+		position: relative;
+		top: 5%;
+		background: url('http://myauto.com.br/wp-content/uploads/2016/10/Cinza-Escuro.jpg');
+		}
+		div#ocultar-mostrar-data{
+		position: relative;
+		top: 5%;
+		background: url('http://myauto.com.br/wp-content/uploads/2016/10/Cinza-Escuro.jpg');
+		}
+		div#ocultar-mostrar-cursor{
+		position: relative;
+		top: 5%;
+		background: url('http://myauto.com.br/wp-content/uploads/2016/10/Cinza-Escuro.jpg');
+		}
+		div#despertador{
+		position: relative;
+		top: 5%;
+		background: url('http://myauto.com.br/wp-content/uploads/2016/10/Cinza-Escuro.jpg');
+		}
+		div#ajustarLCD{
+		position: relative;
+		top: 5%;
+		background: url('http://myauto.com.br/wp-content/uploads/2016/10/Cinza-Escuro.jpg');
+		}
+		div#ocultar-menu{
+		position: relative;
+		top: 5%;
+		background: url('http://myauto.com.br/wp-content/uploads/2016/10/Cinza-Escuro.jpg');
+		}
+		div#desativarVerao{
+		position: relative;
+		top: 5%;
+		background: url('http://myauto.com.br/wp-content/uploads/2016/10/Cinza-Escuro.jpg');
+		}
+		div#data{
+		position: fixed;
+		top: 56%;
+		left: 41.8%;
+		font-family: 'LCD', sans-serif;
+		font-size: 90%;
+		}
+		h1#mostraHora{
+		cursor: default;
+		position: fixed;
+		top: 12%;
+		left: 23%;
+		font-size: 1150%;
+		font-family: 'LCD', sans-serif;
+		}
+		h1{
+		position: relative;
+		top: 5%;
+		left: 2%;
+		cursor: pointer;
+		}
+		h2#mostraSemana{
+		position:fixed;
+		top: 62%;
+		left: 48.7%;
+		}
+		h3#notificaAlarmetxt{
+			position:fixed;
+			top: 68.4%;
+			left: 45%;
+			font-family: lcdfont;
+			font-size: 100%;
+		}
+		img#menuIcone{
+		float:right;
+		top: 0.5%;
+		left:0.5%;
+		width: 2%;
+		height:3.5%;
+		cursor: pointer;
+		}
+		@keyframes menu-Icone{
+			0%{
+				transform:rotate(0);
+			}
+			50%{
+				transform:rotate(90deg);
+			}
+			100%{
+				transform:rotate(180deg);
+			}
+		}
+		img#menuIcone:hover{
+			animation-name: menu-Icone;
+			animation-duration: .4s;
+			animation-iteration-count:1;
+		}
+		img#imagemDespertador{
+		position:fixed;
+		cursor:pointer;
+		top: 5%;
+		left: 45%;
+		width: 15%;
+		height: 22%;
+		}
+		img#notificaAlarme{
+			position:fixed;
+			top: 70%;
+			left: 43%;
+			width: 1.5%;
+			height: 2.5%;
+		}
+		.botoes-selecao{
+		position: relative;
+		left: 2%;
+		background: #ecf0f1;
+		border: 0px;
+		border-radius:5px;
+		bottom: 3px;
+		}
+		.botoes-selecao:hover{
+			background: #bdc3c7;
+			color: white;
+			transition: background, color .5s;
+		}
+		#menus{
+		  width: 18%;
+		  height: 100%;
+		  left:0%;
+		  top:0%;
+		  position: relative;
+		}
+		.caixaCor{
+			position: relative;
+			padding-left: 2px;
+			border-radius: 8px;
+			bottom: 4px;
+			left: 2%;
+		}
+		.caixaCor:hover{
+			background: #bdc3c7;
+			transition: background .5s;
+		}

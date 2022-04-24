@@ -1,0 +1,71 @@
+﻿<html>
+	<title>RELOGIO LCD</title>
+	<head>
+		<link href="style/style.css" rel="stylesheet">
+		<link href="http://fonts.cdnfonts.com/css/lcd" rel="stylesheet">
+		<script type="text/javascript" src="js/script.js" ></script>
+	</head>
+	<body id="corpo"> 
+	<div id="pattern">	
+		<div>
+			<h1 id="mostraHora" ondblclick="menu('mostrarIcon')"></h1>
+		</div>
+		<div id="data">
+			<h1 id="mostraData" onclick=""></h1>
+			<h2 id="mostraSemana"></h2>
+		</div>
+		<div>
+			<img id="menuIcone" src="https://4.bp.blogspot.com/-ghNC5H_VnLs/W7DfzJ60QeI/AAAAAAAABkI/wohQEFthilUCUGnQ5HxHju_9WRGdug9ogCLcBGAs/s1600/Menu.png" onclick="menu('i');" onmousedown="myMove();">
+			<div id="opcoes">
+				<div id="despertador">
+					<h1>Despertador</h1>
+					<input type="time" id="selectHora" class="botoes-selecao">
+					<input type="submit" class="botoes-selecao" onclick="menu('clock')" value="Ativar">
+				</div>
+				<div id="backColor">
+					<h1>Mudar cor de relógio</h1>
+					<input type="color" id="caixaCor1" class="caixaCor">
+					<input type="submit" onclick="menu('lcd')" id="mudar" class="botoes-selecao">
+				</div>
+				<div id="backColor">
+					<h1>Mudar cor do Fundo</h1>
+					<input type="color" id="caixaCor2" class="caixaCor">
+					<input type="submit" onclick="menu('fundo')" id="mudar2" class="botoes-selecao">
+				</div>
+				<div id="inverteColor">
+					<h1>Inverter cores</h1>
+					<input type="submit" onclick="menu('inverte')" class="botoes-selecao" value="Inverter">
+				</div>
+				<div id="ajustarLCD">
+					<h1>Ajustar posição do relógio</h1>
+					<input id="deslocarLCDE" type="button" onclick="deslocaLCD(10,'esquerda');" class="botoes-selecao" value="<">
+					<input id="deslocarLCDD" type="button" onclick="deslocaLCD(10,'direita');" class="botoes-selecao" value=">">
+					<input id="deslocarLCDC" type="button" onclick="deslocaLCD(140,'cima');" class="botoes-selecao" value="/\">
+					<input id="deslocarLCDB" type="button" onclick="deslocaLCD(120,'baixo');" class="botoes-selecao" value="V">
+					<input id="redefinir" type="button" onclick="deslocaLCD('redefinir');" class="botoes-selecao" value="Redefinir">
+				</div>
+				<div id="ocultar-mostrar-data">
+					<h1>Ocultar/Mostrar data</h1>
+					<input type="submit" onclick="menu('oculta-mostraData')" class="botoes-selecao" value="Ocultar/Mostrar">
+				</div>
+				<div id="ocultar-mostrar-cursor">
+					<h1>Ocultar/Mostrar cursor</h1>
+					<input type="submit" onclick="menu('ocultar-mostrarCursor')" class="botoes-selecao" value="Ocultar/Mostrar">
+				</div>
+				<div id="ocultar-menu">
+					<h1>Ocultar ícone menu</h1>
+					<input type="submit" onclick="menu('ocultarIcon')" class="botoes-selecao" value="Ocultar">
+				</div>
+				<div id="desativarVerao">
+					<h1>Desativar horário de verão</h1>
+					<input id="desableVerao" type="submit" onclick="menu('disableVerao')" class="botoes-selecao" value="Ativar/Desativar">
+				</div>
+			</div>
+		</div>
+	</div>	
+	<img id="notificaAlarme" src="https://prints.ultracoloringpages.com/a0b2f719f146f684884204a44fc0a65a.png">
+	<img id="imagemDespertador" src="" onmousedown="silenciar();">
+	<h3 id="notificaAlarmetxt"></h3>
+	<audio id="alarme_audio" src="https://protettordelinks.com/wp-content/baixar/toque_original_da_apple_www.toquesengracadosmp3.com.mp3">
+	</body>
+</html>
