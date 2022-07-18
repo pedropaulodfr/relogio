@@ -32,8 +32,8 @@ a cor dos números do relógio. Tamém é possível alterar a posição dos núm
 
 ### Tecnologias
 
-HTML
-JavaScript
+HTML,
+JavaScript,
 CSS
 
 
